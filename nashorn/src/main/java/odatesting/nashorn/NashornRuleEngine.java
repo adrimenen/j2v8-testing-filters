@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
@@ -23,7 +24,7 @@ public class NashornRuleEngine {
 
 
 	@SuppressWarnings("all")
-	public static Map<String, Object> engineThisEngineer(Map<String, Object> state, Object value) throws ScriptException, NoSuchMethodException, IOException {
+	public static HashMap<String, Object> engineThisEngineer(HashMap<String, Object> state, Object value) throws ScriptException, NoSuchMethodException, IOException {
 		Stream<Path> path = Files.walk(Paths.get("nashorn/src/main/resources/rules"));
 		List<String> files = path
 				.map(Path::toString)
@@ -37,7 +38,7 @@ public class NashornRuleEngine {
 		return state;
 	}
 
-	private static Map<String, Object> rollTheRule(String file, Map<String, Object> state, Object value) throws ScriptException, NoSuchMethodException {
+	private static HashMap<String, Object> rollTheRule(String file, HashMap<String, Object> state, Object value) throws ScriptException, NoSuchMethodException {
 		ScriptEngineManager manager = new ScriptEngineManager();
 		ScriptEngine engine = manager.getEngineByName(ENGINE_NAME);
 		engine.eval(readFile(file));

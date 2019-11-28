@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/j2v8/j2v8.iml" filepath="$PROJECT_DIR$/j2v8/j2v8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/j2v8-testing-filters.iml" filepath="$PROJECT_DIR$/.idea/j2v8-testing-filters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nashorn/nashorn.iml" filepath="$PROJECT_DIR$/nashorn/nashorn.iml" />
+    </modules>
+  </component>
+</project>

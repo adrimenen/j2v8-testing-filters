@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class a {
+public class NashornRuleEngine {
 
 	private static final String TEMPERATURE_DEVICE_DATASTREAM_ID = "tempDevice";
 	private static final String ENGINE_NAME = "nashorn";

@@ -32,7 +32,7 @@ public class Activator implements BundleActivator {
 				try {
 					TimeUnit.SECONDS.sleep(1);
 					v4.main(null);
-				} catch (FileNotFoundException | InterruptedException e) {
+				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
 			}

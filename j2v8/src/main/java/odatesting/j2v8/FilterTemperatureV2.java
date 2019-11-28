@@ -54,7 +54,7 @@ public class FilterTemperatureV2 {
 	}
 
 	private static String readFile(String fileName) throws FileNotFoundException {
-		Scanner script = new Scanner(new File("oda-statemanager/test/src/main/resources/" + fileName));
+		Scanner script = new Scanner(new File("j2v8/src/main/resources/" + fileName));
 		StringBuilder scriptContent = new StringBuilder();
 
 		while(script.hasNext()) {
